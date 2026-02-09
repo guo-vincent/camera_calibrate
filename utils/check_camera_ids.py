@@ -3,7 +3,7 @@
 # --------------------------------------------------------------------------
 import cv2
 
-def check_camera_indices(max_to_test: int = 10) -> None:
+def check_camera_indices(max_to_test: int = 3) -> None:
     found_indices = []
     
     print(f"Scanning indices 0 through {max_to_test-1}...")

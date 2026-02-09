@@ -1,15 +1,16 @@
-Procedure: 
+# Self Check List
+
 1. Rigidly mount both cameras
 2. Disable Autofocus, Autoexposure, Auto white balance
     also fix resolution and FPS (probably 1280x720, 30FPS)
-3. print calibration chessboard at https://github.com/opencv/opencv/blob/4.x/doc/pattern.png
+3. print calibration chessboard at <https://github.com/opencv/opencv/blob/4.x/doc/pattern.png>
     100% scale, 25mm per square, on flat, rigid surface
 4. install requirements.txt
 5. run util/check_camera_ids.py to know what ids should go for --left and --right in capture_stereo.py
 6. Capture some number of stereo image pairs (around 10~20) and run scripts/capture_stereo.py
 7. Calibrate each camera using scripts/calibrate_intrinsics.py and get yaml files back
-8. Get relative pose betweeen 2 cameras with scripts\calibrate_stereo.py and generate stereo_extrinsics.yaml
-9. Use scripts\rectify_images.py to make epipolar lines horizontal. 
+8. Get relative pose between 2 cameras with scripts\calibrate_stereo.py and generate stereo_extrinsics.yaml
+9. Use scripts\rectify_images.py to make epipolar lines horizontal.
     Left and right images should align vertically, guide lines horizontally
 Calibration done after this.
 

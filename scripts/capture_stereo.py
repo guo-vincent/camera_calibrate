@@ -15,8 +15,10 @@
 #  - Press 's' to save a stereo pair (left and right images will be
 #    saved with matching numeric suffixes in separate left/ and right/ folders).
 #  - Press 'q' or ESC to quit.
-#  LEFT CAMERA IMAGES AND RIGHT CAMERA IMAGES SHOUDL NOT BE MIXED. EVER. ONCE YOU DETERMINE WHICH CAMERA IS THE LEFT ONE KEEP IT CONSISTENT.
+#  LEFT CAMERA IMAGES AND RIGHT CAMERA IMAGES SHOULD NOT BE MIXED. EVER. ONCE YOU DETERMINE WHICH CAMERA IS THE LEFT ONE KEEP IT CONSISTENT.
 # 
+#
+#  This works. 
 # --------------------------------------------------------------------------
 import cv2
 import os

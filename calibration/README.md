@@ -1,6 +1,7 @@
 # Calibration Chessboard
 
-This directory contains printable calibration targets used for camera and stereo calibration. Accurate chessboard geometry is critical — calibration quality is only as good as the physical target.
+This directory is a WORK IN PROGRESS.
+This directory contains printable calibration targets used for camera and stereo calibration.
 
 ---
 
@@ -11,13 +12,13 @@ This directory contains printable calibration targets used for camera and stereo
 **Squares:** 10 x 7  
 **Square size:** 25 mm (recommended)
 
-File: chessboard_9x6_25mm.pdf (https://github.com/opencv/opencv/blob/4.x/doc/pattern.png)
+File: chessboard_9x6_25mm.pdf (<https://github.com/opencv/opencv/blob/4.x/doc/pattern.png>)
 
 This pattern works well for webcams with resolutions from 720p to 1080p and typical working distances of 0.3–2.0 m.
 
 ---
 
-## Printing Instructions (CRITICAL)
+## Printing Instructions
 
 1. Print at **100% scale**
    - Disable “Fit to Page”
@@ -48,6 +49,7 @@ If the printed square size is not accurate, your depth scale will be wrong.
 ## During Image Capture
 
 When capturing calibration images:
+
 - Show the board at different depths
 - Tilt and rotate the board
 - Cover all image regions
@@ -61,6 +63,7 @@ Aim for **20–30 valid stereo pairs**.
 ## Corner Definition Reminder
 
 For OpenCV:
+
 - A “9x6” board means **9 inner corners horizontally**
 - NOT the number of squares
 - The calibration code must match this exactly
@@ -70,14 +73,9 @@ For OpenCV:
 ## If You Need a Different Board
 
 You may generate custom boards using online generators (A4 / US Letter). If you do:
+
 - Record number of inner corners
 - Record square size in mm
 - Update calibration scripts accordingly
 
 ---
-
-## Key Rule
-
-If the chessboard geometry is wrong, **everything downstream is wrong** — focal length, baseline, and depth scale.
-
-Measure carefully.
