@@ -1,5 +1,5 @@
 # --------------------------------------------------------------------------
-# Helper: utils/check_camera_ids.py (run this first so you know which camera indices to use for capture_stereo.py)
+# Helper: utils/check_camera_ids.py (figure out camera indices to use for capture_stereo.py)
 # --------------------------------------------------------------------------
 import cv2
 
