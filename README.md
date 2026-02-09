@@ -72,30 +72,54 @@ Each directory has a single responsibility. Calibration outputs are stored in `c
    - Measure square size accurately
 
 2. **Capture stereo image pairs**
-python scripts/capture_stereo.py
 
-Images are saved to:
-data/raw/left/
-data/raw/right/
+   ```bash
+   python scripts/capture_stereo.py
+   ```
+
+   Images are saved to:
+
+   ```bash
+   data/raw/left/
+   data/raw/right/
+   ```
 
 3. **Calibrate intrinsics (each camera independently)**
-python scripts/calibrate_intrinsics.py
 
-Output:
-calibration/intrinsics/left_camera.yaml
-calibration/intrinsics/right_camera.yaml
+   ```bash
+   python scripts/calibrate_intrinsics.py
+   ```
+
+   Output:
+
+   ```bash
+   calibration/intrinsics/left_camera.yaml
+   calibration/intrinsics/right_camera.yaml
+   ```
 
 4. **Stereo calibration (extrinsics)**
-python scripts/calibrate_stereo.py
 
-Output:
-calibration/extrinsics/stereo_extrinsics.yaml
+   ```bash
+   python scripts/calibrate_stereo.py
+   ```
+
+   Output:
+
+   ```bash
+   calibration/extrinsics/stereo_extrinsics.yaml
+   ```
 
 5. **Rectification**
-python scripts/rectify_images.py
 
-Output:
-calibration/rectification/
+   ```bash
+   python scripts/rectify_images.py
+   ```
+
+   Output:
+
+   ```bash
+   calibration/rectification/
+   ```
 
 6. **Validate**
 
