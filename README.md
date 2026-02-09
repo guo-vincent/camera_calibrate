@@ -36,11 +36,12 @@ If *any* camera setting or physical alignment changes, calibration must be redon
 
 ## Software Requirements
 
+These will be the same as the alamgirakash2000/AeroPiper repo.
+
 - Windows 10/11
 - Python 3.9+
 - OpenCV (opencv-python)
 - NumPy
-These will be the same as the aeropiper repo that this is a part of
 
 Install dependencies:
 
@@ -77,26 +78,26 @@ Images are saved to:
 data/raw/left/
 data/raw/right/
 
-1. **Calibrate intrinsics (each camera independently)**
+3. **Calibrate intrinsics (each camera independently)**
 python scripts/calibrate_intrinsics.py
 
 Output:
 calibration/intrinsics/left_camera.yaml
 calibration/intrinsics/right_camera.yaml
 
-1. **Stereo calibration (extrinsics)**
+4. **Stereo calibration (extrinsics)**
 python scripts/calibrate_stereo.py
 
 Output:
 calibration/extrinsics/stereo_extrinsics.yaml
 
-1. **Rectification**
+5. **Rectification**
 python scripts/rectify_images.py
 
 Output:
 calibration/rectification/
 
-1. **Validate**
+6. **Validate**
 
 - Check rectified image alignment
 - Verify epipolar lines are horizontal
@@ -108,7 +109,9 @@ calibration/rectification/
 
 Once calibration is complete:
 
+```bash
 python runtime/stereo_depth.py
+```
 
 This script:
 
@@ -127,14 +130,6 @@ No calibration images are required at runtime.
 - Chessboard square size must match printed measurement
 - Baseline is derived from stereo calibration `T` vector
 - Depth is positive forward from the camera plane
-
----
-
-## Important Warnings
-
-- Webcam rolling shutter and lack of hardware sync limit accuracy
-- Moving cameras even slightly invalidates calibration
-- Autofocus will silently destroy calibration accuracy
 
 ---
 
