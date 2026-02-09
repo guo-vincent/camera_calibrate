@@ -18,7 +18,7 @@
 #  LEFT CAMERA IMAGES AND RIGHT CAMERA IMAGES SHOULD NOT BE MIXED. EVER. ONCE YOU DETERMINE WHICH CAMERA IS THE LEFT ONE KEEP IT CONSISTENT.
 # 
 #
-#  This works. 
+#  LAST TESTED ON 2/9/26. Code successfully executed.
 # --------------------------------------------------------------------------
 import cv2
 import os

@@ -1,4 +1,4 @@
-# Stereo Camera Calibration with OpenCV (Windows)
+# Stereo Camera Calibration with OpenCV
 
 This repository contains a complete, reproducible pipeline for calibrating two monocular webcams (e.g. Logitech C920x) into a stereo vision system using OpenCV. The primary goal is to obtain accurate depth perception suitable for real-time remote operation.
 
