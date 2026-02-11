@@ -37,7 +37,11 @@ def find_corners(image_paths: List[str], board_size: Tuple[int, int], criteria: 
             continue
 
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        ret, corners = cv2.findChessboardCorners(gray, board_size, None)
+        ret, corners = cv2.findChessboardCornersSB(
+            gray,
+            board_size,
+            flags=cv2.CALIB_CB_EXHAUSTIVE + cv2.CALIB_CB_ACCURACY
+        )
         if ret:
             corners = cv2.cornerSubPix(gray, corners, (11,11), (-1,-1), criteria)
             imgpoints.append(corners)

@@ -17,7 +17,7 @@ Once calibration is complete, runtime systems can load the saved YAML files with
 
 - Two identical or similar webcams (Logitech C920x recommended)
 - Rigid stereo mount (no movement after calibration)
-- Fixed camera settings (we used logitune to adjust the C920X cameras with the following settings):
+- Fixed camera settings (for C920 HD Pro Webcam):
   - Anti-flicker: NTSC 60 Hz
   - auto exposure OFF
     - Exposure: -6
@@ -29,6 +29,18 @@ Once calibration is complete, runtime systems can load the saved YAML files with
     - Saturation: 32
     - Sharpness: 0
 - Known and fixed resolution (e.g. 1280x720)
+
+- On C310 HD Pro Webcam
+- Anti-flicker: NTSC 60 Hz
+  - auto exposure OFF
+    - Exposure: -6
+    - Gain: 60
+- auto white balance OFF
+  - Temperature: 4500 K
+  - Brightness: 85
+  - Contrast: 32
+  - Saturation: 32
+  - Sharpness: 0
 
 If *any* camera setting or physical alignment changes, calibration must be redone.
 

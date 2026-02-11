@@ -1,0 +1,6 @@
+Left camera is at 36 mm
+Right camera at 261 mm
+
+Distance is 261 - 36 = 225 +- 3 mm (ruler is bending slightly, so error may be larger than expected)
+
+~65 mm
