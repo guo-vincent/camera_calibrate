@@ -2,7 +2,7 @@
 # Purpose: Calibrate each camera independently using chessboard images.
 # Usage:
 #   python scripts/calibrate_intrinsics.py --left_dir data/raw/session_x/left \
-#       --right_dir data/raw/session_x/right --board 9 6 --square 0.025
+#       --right_dir data/raw/session_x/right --board 8 5 --square 0.030
 # Outputs:
 #   calibration/intrinsics/left_camera.yaml
 #   calibration/intrinsics/right_camera.yaml

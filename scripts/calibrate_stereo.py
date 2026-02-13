@@ -3,7 +3,7 @@
 # Usage:
 #   python scripts/calibrate_stereo.py --left_dir data/raw/left --right_dir data/raw/right \
 #       --intr calibration/intrinsics/left_camera.yaml calibration/intrinsics/right_camera.yaml \
-#       --board 9 6 --square 0.025 --out calibration/extrinsics/stereo_extrinsics.yaml
+#       --board 8 5 --square 0.030 --out calibration/extrinsics/stereo_extrinsics.yaml
 # Outputs:
 #   calibration/extrinsics/stereo_extrinsics.yaml
 # --------------------------------------------------------------------------
