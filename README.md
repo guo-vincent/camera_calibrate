@@ -55,11 +55,7 @@ These will be the same as the alamgirakash2000/AeroPiper repo.
 - OpenCV (opencv-python)
 - NumPy
 
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
+Install dependencies from the AeroPiper repo first:
 
 ---
 
